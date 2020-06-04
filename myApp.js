@@ -1,6 +1,7 @@
 
 var express = require('express');
 var app = express();
+console.log(process.env.MESSAGE_STYLE)
 
 // --> 7)  Mount the Logger middleware here
 
@@ -33,6 +34,19 @@ app.get('/json', function (req,res) {
 
 
 /** 6) Use the .env file to configure the app */
+//worked on glitch
+// app.get('/json', (req, res) => {
+//   let message = "Hello json"
+  
+//   if (process.env.MESSAGE_STYLE==='uppercase') {
+//     return res.json({"message": message.toUpperCase()})
+//   }
+//   else {
+//     return res.json({"message": message})
+//   }
+// })
+
+
 
 
 /** 7) Root-level Middleware - A logger */

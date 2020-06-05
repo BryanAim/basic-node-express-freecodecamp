@@ -1,3 +1,4 @@
+let bodyParser = require('body-parser');
 
 var express = require('express');
 var app = express();
@@ -12,6 +13,8 @@ var app = express();
 
 
 // --> 11)  Mount the body-parser middleware  here
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json())
 
 
 /** 1) Meet the node console. */

@@ -1,3 +1,8 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/node
+# Edit at https://www.toptal.com/developers/gitignore?templates=node
+
+### Node ###
 # Logs
 logs
 *.log
@@ -46,6 +51,8 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+# TypeScript v1 declaration files
+typings/
 
 # Optional npm cache directory
 .npm
@@ -90,6 +97,12 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
 # vuepress build output
 .vuepress/dist
 
@@ -114,3 +127,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# End of https://www.toptal.com/developers/gitignore/api/node

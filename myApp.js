@@ -81,6 +81,12 @@ app.get('/:word/echo', function (req, res) {
 
 /** 10) Get input from client - Query parameters */
 // /name?first=<firstname>&last=<lastname>
+app.get('/name',function (req,res) {
+  let { first: firstname, last: lastname} = req.query
+  res.json({
+    name: `${firstname} ${lastname}`
+  })
+})
 
 
 /** 11) Get ready for POST Requests - the `body-parser` */
